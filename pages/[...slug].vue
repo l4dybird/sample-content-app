@@ -7,10 +7,6 @@ const page = data.value.filter((x) => x._path === route.fullPath)[0];
 
 <template>
   <main>
-    <ContentRenderer :value="page">
-      <template #empty>
-        <p>No content found.</p>
-      </template>
-    </ContentRenderer>
+    <ContentDoc :value="page"/>
   </main>
 </template>
